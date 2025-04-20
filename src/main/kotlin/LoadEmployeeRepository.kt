@@ -1,9 +1,9 @@
 import java.nio.file.Paths
 
-class LoadEmployeeRepository : EmployeeRepository {
+class LoadEmployeeRepository {
     private val loadFile = Paths.get("employees.dat").toFile()
 
-    override fun loadAll(): List<Employee> =
+    fun loadAll(): List<Employee> =
         loadFile
             .takeIf { it.exists() }
             ?.readLines()

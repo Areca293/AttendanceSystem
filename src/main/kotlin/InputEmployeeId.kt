@@ -1,6 +1,6 @@
 import kotlin.system.exitProcess
 
-class InputHandler {
+class InputEmployeeId {
     fun selectEmployee(employee: List<Employee>): Employee? {
         println("请输入员工ID（Q退出）")
         val input = readlnOrNull()?.trim()?.uppercase()

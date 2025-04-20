@@ -13,13 +13,6 @@ fun main() {
         008|葛江成
         """.trimIndent(),
     )
-    val host = "localhost"
-    val port = 8080
-    val message = "Hello, Server!"
-//    val func= ServerApi::sendRequest
-//    val response = func(ServerApi(),host, port, message)
 
-    val response = ServerApi().sendRequest(host, port, message)
-    println("Server response: $response")
     System().start()
 }

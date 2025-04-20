@@ -22,3 +22,12 @@ class ServerApi {
         }
     }
 }
+
+fun main() {
+    val host = "172.20.10.6"
+    val port = 8081
+    val message = "GET_WEEKLY|0,1"
+
+    val response = ServerApi().sendRequest(host, port, message)
+    println("Server response: $response")
+}
